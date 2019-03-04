@@ -104,7 +104,6 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="green-text" id="contact">Contact Me</h4>
           <form method="POST" action="https://formspree.io/bhooms87@gmail.com" id="contact-form">
-
           <div class="input-field col s6">
             <input id="first_name" type="text" class="validate">
             <label for="first_name" class="green-text">First Name</label>
@@ -115,7 +114,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" name="_replyto" class="validate">
               <label for="email" class="green-text">Email</label>
             </div>
           </div>
@@ -127,7 +126,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <button class="btn waves-effect waves-light green" type="submit" name="action">Submit</button>
+              <button class="btn waves-effect waves-light green" type="submit" name="action" value="send">Submit</button>
             </div>
           </div>
         </div>
