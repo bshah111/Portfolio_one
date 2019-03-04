@@ -54,7 +54,7 @@
           <div class="icon-block">
             <h2 class="center green-text"><i class="material-icons">camera_alt
               </i></h2>
-            <img src="Bhumi1.jpg" width="50%" class="center">
+            <img src="Bhumi1.jpg" width="50%" class="center img">
 
           </div>
         </div>
@@ -85,15 +85,56 @@
           <br><br>
           <h1 class="header center white-text text-lighten-2">Projects</h1>
 
+
+
           <div class="row center">
-            <a href="project.html" id="download-button" class="btn-large waves-effect waves-light green lighten-1">Click
-              Here</a>
+            <!-- <a href="project.html" id="download-button" class="btn-large waves-effect waves-light green lighten-1">Click
+              Here</a> -->
           </div>
           <br><br>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="studio-background1.png" alt="Unsplashed background img 2"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="carousel projects">
+        <a class="carousel-item" href="https://bshah111.github.io/Giftatic/">
+          <h3 href="https://github.com/bshah111/Giftatic">Giftatic</h3>
+
+          <img src="https://lorempixel.com/500/500/nature/1">
+        </a>
+        <a class="carousel-item" href="https://bshah111.github.io/unit-4-game/">
+          <h3>unit-4-game</h3>
+          <img src="https://lorempixel.com/250/250/nature/2">
+        </a>
+        <a class="carousel-item" href="https://bshah111.github.io/Conscious-Cuisine/">
+          <h3> Conscious-Cuisine</h3>
+          <img src="https://lorempixel.com/250/250/nature/3">
+        </a>
+        <a class="carousel-item" href="https://bshah111.github.io/Train_Schedular/">
+          <h3> Train_Schedular</h3>
+          <img src="https://lorempixel.com/250/250/nature/4">
+        </a>
+        <br><br>
+      </div>
+    </div>
+  </div>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">“Everything you need to accomplish your goals is already in you.”
+          </h5> -->
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="studio-background2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
   <div class="container">
@@ -104,33 +145,34 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="green-text" id="contact">Contact Me</h4>
           <form method="POST" action="https://formspree.io/bhooms87@gmail.com" id="contact-form">
-          <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name" class="green-text">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name" class="green-text">Last Name</label>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" name="_replyto" class="validate">
-              <label for="email" class="green-text">Email</label>
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate" required>
+              <label for="first_name" class="green-text">First Name</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea placeholder="Enter message here" id="msg" class="materialize-textarea"></textarea>
-              <label for="textarea1" class="green-text">Message</label>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" required>
+              <label for="last_name" class="green-text">Last Name</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <button class="btn waves-effect waves-light green" type="submit" name="action" value="send">Submit</button>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" name="_replyto" class="validate" required>
+                <label for="email" class="green-text">Email</label>
+              </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea placeholder="Enter message here" id="msg" class="materialize-textarea" required></textarea>
+                <label for="textarea1" class="green-text">Message</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn waves-effect waves-light green" type="submit" name="action"
+                  value="send">Submit</button>
+              </div>
+            </div>
         </div>
-      </form>
+        </form>
       </div>
     </div>
   </div>
@@ -151,6 +193,9 @@
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
+
+      $('.carousel').carousel();
+
       var fname;
       $("#first_name").on("keyup", function (event) {
         event.preventDefault()

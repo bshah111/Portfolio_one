@@ -15,6 +15,18 @@ p {
   line-height: 2rem;
 }
 
+.img{
+  margin-left: 25%;
+}
+.carousel .carousel-item {
+  width:475px !important;
+  height:475px ;
+}
+h3{
+  color: green
+}
+  
+
 .sidenav-trigger {
   color: #26a69a;
 }
